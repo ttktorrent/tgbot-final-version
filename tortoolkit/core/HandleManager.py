@@ -592,7 +592,7 @@ async def handle_server_command(message):
     diff = Human_Format.human_readable_timedelta(diff)
 
     msg = (
-         '<b>**TorToolKit** cracked by <a href="https://t.me/hackerthamizhan007">Venkatesh</a></b>'
+         '<b>**TorToolKit** cracked by <a href="https://t.me/hackerthamizhan007">Venkatesh</a></b>\n\n'
         f"<b>BOT UPTIME:-</b> {diff}\n\n"
         "<b>CPU STATS:-</b>\n"
         f"Cores: {cores} Logical: {lcores}\n"
