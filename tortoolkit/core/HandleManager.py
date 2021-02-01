@@ -99,12 +99,7 @@ def add_handlers(bot: TelegramClient):
         chats=get_val("ALD_USR"))
     )
     
-    bot.add_event_handler(
-        handle_rc_command,
-        events.NewMessage(pattern="/rc",
-        chats=get_val("ALD_USR"))
-    )
-
+    
     bot.add_event_handler(
         handle_server_command,
         events.NewMessage(pattern=command_process(get_command("SERVER")),
@@ -522,13 +517,6 @@ async def get_logs_f(e):
     else:
         await e.delete()
         
-async def handle_rc_command(e)
-      if await is_admin(e.client,e.sender_id,e.chat_id):
-        e.text += " rclone.conf"
-        await upload_document_f(e)
-    else:
-        await e.delete()
-
 async def set_password_zip(message):
     #/setpass message_id password
     data = message.raw_text.split(" ")
