@@ -13,7 +13,7 @@ except:
         ALD_USR = [1458912827,1467018377,1546675358,1444150889,1482853408,1333689035,935041758,885488992,-100374414317,-1001479070385,-100320640070,-1001422326809,-1001267728460]
         
         # Google Drive Index Link should include the base dir also See readme for more info
-        GD_INDEX_URL = https://index.blacktor.workers.dev/0:/
+        GD_INDEX_URL = "https://index.blacktor.workers.dev/0:/"
 
         # Time to wait before edit message
         EDIT_SLEEP_SECS = 40
